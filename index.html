@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking the external css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Personal Website</title>
+    <style>
+      .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 20px;
+      }
+      .skill-tag {
+        background-color: #f0f0f0;
+        color: #333;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        padding: 8px 15px;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+        display: inline-block;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .skill-tag:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .marq {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border: groove;
+        border-color: antiquewhite;
+        border-radius: 30px;
+        background-color: #333;
+      }
+    </style>
+</head>
+
+<body>
+    <!-- Header > Nav > Logo & Menu -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Sarandass Portfolio</a>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="left" >
+            <div class="content">
+                <span>
+                <h2>Hi, I'm <span class="stroke-text"; style="font-size: 70px;">Sarandass M</span></h2></span>
+                <p style="font-size: 25px;">Web Designer & Software Developer</p>
+                <p style="font-size: larger; width: 700px; line-height: 1.6;">I am a Fresher and I am excited to showcase my journey, skills, and projects that my
+                   dedication to learning and growth. With a strong foundation in SQL, Web Development and 
+                   python programming, I develop programs in a proper manner, solve problems that arises 
+                   errors because of practise and exploring innovative solutions. I have completed UG(BSc) and 
+                   PG(MSc) degree in Computer Science field at Hindustan College of Arts and Science, Chennai 
+                   which is affiliated to the University of Madras. I have a passion for web design and love 
+                   to create for web and mobile devices and also develops programs using python to create useful
+                   functions and analyze database using SQL.
+                </p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="image">
+                <img src="images/profile.jpeg.jpg" alt="Sarandass M">
+            </div>
+            <div class="card">
+                <div class="rotate-45"></div>
+            </div>
+            <div class="card">
+                <div class="rotate-minus-45"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects Section -->
+    <section id="projects">
+        <div class="header">
+            <h1 class="pro">My Projects</h1>
+        </div>
+        <div class="projects-list">
+            <div class="project">
+                <div class="project-image">
+                    <img src="images/sql.png" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">Querying Largest Database</h2>
+                    <p class="project-desc">This project focuses on querying a large relational database using SQL to derive actionable 
+                        insights from customer and sales data. Using the AdventureWorks sample database, participants will 
+                        restore the database on a server and perform a series of SQL queries to extract information such as 
+                        customer details, sales performance for specific time periods, and cumulative sales trends. Key topics 
+                        include understanding table structures, data types, SQL operators, and functions. The tasks involve 
+                        retrieving detailed customer contact information, analyzing sales data from specified timeframes, 
+                        and aggregating total sales by customers and months. This project provides a hands-on approach to 
+                        mastering SQL querying techniques in a real-world database environment, enhancing skills essential 
+                        for database management and analytics.</p><br><br>
+                    <div class="status">
+                        <a href="https://github.com/Saran213/SQL/tree/main/Project1" target="_blank" class="view-more-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image">
+                    <img src="images/sql1.png" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">Relational Database Design</h2>
+                    <p class="project-desc">This project aims to provide hands-on experience in designing and implementing a relational database using SQL Server. 
+                        Participants will learn to transform a relational database design into well-structured SQL tables, 
+                        incorporating attributes, primary keys, and foreign keys to ensure data integrity 
+                        and proper relationships between entities. The project involves defining relational attributes, 
+                        creating primary and foreign keys, inserting sample data into each table, and performing data deletion to understand database operations. 
+                        By completing this project, participants will gain foundational skills in database design, normalization, 
+                        and implementation, essential for managing relational databases effectively.</p><br><br>
+                    <div class="status">
+                        <a href="https://github.com/Saran213/SQL/blob/main/Case%20study/Project2.sql" target="_blank" class="view-more-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image">
+                    <img src="images/casestudy.png" alt="Case Study">
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">Case Study</h2>
+                    <p class="project-desc">This case study explores the use of SQL queries to extract 
+                        valuable insights from a dataset containing information about sales, profit, 
+                        marketing expenditure, and other relevant factors. The dataset comprises 
+                        three key tables: FactTable, ProductTable, and LocationTable. The FactTable 
+                        contains detailed transaction data, while the ProductTable and LocationTable 
+                        provide additional context about products and geographic locations, respectively. 
+                        By leveraging SQL queries, the database administrator aims to uncover patterns 
+                        and trends in the data, such as identifying top-selling items, analyzing state-wise 
+                        sales and profit, and assessing the impact of marketing spending. The insights 
+                        derived from these queries can be instrumental in making informed business 
+                        decisions and optimizing sales strategies.</p><br><br>
+                    <div class="status">
+                        <a href="https://github.com/Saran213/SQL/blob/main/Case%20study/CaseStudy.sql" target="_blank" class="view-more-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image">
+                    <img src="images/react.png" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">Image Search Engiene 1</h2>
+                    <p class="project-desc">This project showcases an efficient image search engine built with ReactJS, leveraging 
+                        its component-based architecture for dynamic, responsive design. It integrates APIs like Unsplash to 
+                        fetch images based on user queries and offers features such as real-time search, infinite scrolling, and 
+                        advanced filtering. Optimized with techniques like lazy loading and memoization, the engine ensures high 
+                        performance and accessibility across devices. This application highlights ReactJS's scalability and potential 
+                        in building interactive search interfaces for various domains.</p><br><br>
+                    <div class="status">
+                        <a href="https://github.com/Saran213/react-project" target="_blank" class="view-more-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skill section -->
+    <section id="skills">
+        <div class="header">
+            <h1 class="pro">Skills</h1>
+        </div>
+        <Marquee class="marq" direction="left" loop="">
+        <div class="skills-container">
+            <div class="skill-tag">HTML</div>
+            <div class="skill-tag">CSS</div>
+            <div class="skill-tag">JavaScript</div>
+            <div class="skill-tag">React</div>
+            <div class="skill-tag">Node.js</div>
+            <div class="skill-tag">Python</div>
+            <div class="skill-tag">SQL</div>
+        </div>
+        </Marquee>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="background">
+            <div class="align">
+            <br><br><br><br><h1 class="pro" style="text-align: center;">Contact Me</h1>
+            <a href="https://www.linkedin.com/in/sarandass-m-a77940321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                <img src="./images/linkedin.png" alt="linkedin" class="contact">
+            </a>
+            <a href="mailto:sarandassm@gmail.com" target="_blank">
+                <img src="./images/gmail.jpeg" alt="" class="contact">
+            </a>
+            <a href="https://github.com/saran213" target="_blank">
+                <img src="./images/github.png" alt="" class="contact" >
+            </a></div></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p style="text-align: center;">&copy; 2024 Portfolio. All Rights Reserved. <br> <a
+                    href="#">Sarandass M</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
